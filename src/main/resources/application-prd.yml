@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: prd
+  datasource:
+    url: ${DATABASE_URL}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
