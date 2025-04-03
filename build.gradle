@@ -21,11 +21,13 @@ dependencies {
 	// Spring Boot starters
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-
+	implementation 'com.h2database:h2'
 	// Adicionando o Swagger UI corretamente
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 
 	// Banco de dados
+
+	runtimeOnly 'com.h2database:h2'  // Garante que o driver estará disponível em tempo de execução
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
 
